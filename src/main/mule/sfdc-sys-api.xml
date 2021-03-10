@@ -11,4 +11,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="ed973568-a59f-47a0-972e-3d1344a3e464" config-ref="HTTP_Listener_config" path="/getsfdcdata"/>
 		<logger level="INFO" doc:name="Logger" doc:id="14ecd141-813a-4ae4-8c78-82a356528328" message="Logger Added. Payload = #[payload]"/>
 	</flow>
+	<flow name="sfdc-sys-apiFlow1" doc:id="5e5976f4-ccfc-4e8f-9a34-ab5dc2ec237b" >
+		<http:listener doc:name="Listener" doc:id="b839d8e5-4502-4dc9-8ccd-2272304cced8" config-ref="HTTP_Listener_config" path="/getdata"/>
+		<logger level="INFO" doc:name="Logger" doc:id="d3c1e0f2-9461-4bc0-98e6-df084e5a0f75" message="#[payload]"/>
+	</flow>
 </mule>
