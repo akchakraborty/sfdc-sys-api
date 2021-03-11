@@ -31,6 +31,14 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+					<username>muletrainer12</username>
+					<environment>Sandbox</environment>
+					<workers>1</workers>
+					<workerType>Micro</workerType>
+					<applicationName>sfdc-system-api</applicationName>
+					<password>Demo@123</password>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
