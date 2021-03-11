@@ -13,6 +13,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</flow>
 	<flow name="sfdc-sys-api-Flow" doc:id="5e5976f4-ccfc-4e8f-9a34-ab5dc2ec237b" >
 		<http:listener doc:name="Listener" doc:id="b839d8e5-4502-4dc9-8ccd-2272304cced8" config-ref="HTTP_Listener_config" path="/getdata"/>
-		<logger level="INFO" doc:name="Logger" doc:id="d3c1e0f2-9461-4bc0-98e6-df084e5a0f75" message="payload is = #[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="d3c1e0f2-9461-4bc0-98e6-df084e5a0f75" message="payload is =#[payload]"/>
 	</flow>
 </mule>
