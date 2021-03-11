@@ -37,7 +37,7 @@
 					<workers>1</workers>
 					<muleVersion>4.3.0</muleVersion>
 					<workerType>Micro</workerType>
-					<applicationName>sfdc-system-api</applicationName>
+					<applicationName>sfdc-sys-api</applicationName>
 					<password>Demo@123</password>
 					</cloudHubDeployment>
 				</configuration>
