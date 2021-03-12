@@ -39,7 +39,7 @@
 						<workerType>${workertype}</workerType>
 						<applicationName>${appname}</applicationName>
 						<objectStoreV2>${os}</objectStoreV2>
-						<password>${passowrd}</password>
+						<password>${password}</password>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
