@@ -38,6 +38,7 @@
 					<muleVersion>4.3.0</muleVersion>
 					<workerType>Micro</workerType>
 					<applicationName>sfdc-sys-api</applicationName>
+					<objectStoreV2>true</objectStoreV2>
 					<password>Demo@123</password>
 					</cloudHubDeployment>
 				</configuration>
