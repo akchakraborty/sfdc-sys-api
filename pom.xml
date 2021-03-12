@@ -32,14 +32,14 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-					<username>muletrainer12</username>
-					<environment>Sandbox</environment>
-					<workers>1</workers>
-					<muleVersion>4.3.0</muleVersion>
-					<workerType>Micro</workerType>
-					<applicationName>sfdc-sys-api</applicationName>
-					<objectStoreV2>true</objectStoreV2>
-					<password>Demo@123</password>
+					<username>${username}</username>
+					<environment>${env}</environment>
+					<workers>${workers}</workers>
+					<muleVersion>${muleversion}</muleVersion>
+					<workerType>${workertype}</workerType>
+					<applicationName>${appname}</applicationName>
+					<objectStoreV2>${os}</objectStoreV2>
+					<password>${passowrd}</password>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
