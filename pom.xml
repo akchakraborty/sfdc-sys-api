@@ -32,14 +32,14 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-					<username>${username}</username>
-					<environment>${env}</environment>
-					<workers>${workers}</workers>
-					<muleVersion>${muleversion}</muleVersion>
-					<workerType>${workertype}</workerType>
-					<applicationName>${appname}</applicationName>
-					<objectStoreV2>${os}</objectStoreV2>
-					<password>${passowrd}</password>
+						<username>${username}</username>
+						<environment>${env}</environment>
+						<workers>${workers}</workers>
+						<muleVersion>${muleversion}</muleVersion>
+						<workerType>${workertype}</workerType>
+						<applicationName>${appname}</applicationName>
+						<objectStoreV2>${os}</objectStoreV2>
+						<password>${passowrd}</password>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
