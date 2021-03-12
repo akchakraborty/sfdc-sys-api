@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="134a24c0-9e7a-4e59-a700-7c87e9f55a13" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="sfdc-sys-apiFlow" doc:id="53a248f1-2829-4c7a-a119-fb4c62793255" >
 		<http:listener doc:name="Listener" doc:id="ed973568-a59f-47a0-972e-3d1344a3e464" config-ref="HTTP_Listener_config" path="/getsfdcdata"/>
-		<logger level="INFO" doc:name="Logger" doc:id="14ecd141-813a-4ae4-8c78-82a356528328" message="Logger Added. Payload= #[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="14ecd141-813a-4ae4-8c78-82a356528328" message="Logger Added. Sum = #[2+2]"/>
 	</flow>
 	<flow name="sfdc-sys-api-Flow" doc:id="5e5976f4-ccfc-4e8f-9a34-ab5dc2ec237b" >
 		<http:listener doc:name="Listener" doc:id="b839d8e5-4502-4dc9-8ccd-2272304cced8" config-ref="HTTP_Listener_config" path="/getdata"/>
